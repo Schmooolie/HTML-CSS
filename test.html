@@ -1,0 +1,114 @@
+<!-- Tipp btw du kannst mit strg+# in einer zeile ein kommentar einfügen in vscode, das gilt für alle Sprachen -->
+<!-- Du kannst mit der selben kombo diese auch wieder entfernen. -->
+
+<!-- Vor dem Start: -->
+<!-- Visual Studio Code installieren falls noch nicht vorhanden -->
+<!-- Diese Dokument in Visual Studio Code öffnen -->
+<!-- In dem linken Menü auf Extension klicken und Live Preview suchen  -->
+<!-- Live Preview von Microsoft installieren -->
+<!-- In dem linken Menü auf Explorer klicken -->
+<!-- Rechtsklick auf test.html und auf Show Preview klicken -->
+
+<!DOCTYPE html>
+<!-- Kündigt an um welche Art Dokument es sich handelt -->
+<html>
+<!-- Dies ist der Haupt HTML Container in dem findet alles weitere statt. -->
+    <head>
+    <!-- Der Header Container, in diesem gibt es keinen User content sondern nur Meta Daten und verlinkungen -->
+        <meta charset="utf-8">
+        <!-- Definiert das Charakter Set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Das sind Meta Daten für Internetbrowser, auch eher egal -->
+        <title></title>
+        <!-- Der Titel des Dokuments -->
+        <meta name="description" content="placeholder">
+        <!-- Kurze beschreibung des Dokuments -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Weitere Metadaten für den Internetbrowser, auch erstmal egal. Aber ich lasse es drinne weil es fast standard ist. -->
+        <link rel="stylesheet" href="css/test.css">
+        <!-- Deklarierung und Link zu dem CSS Dokment -->
+    </head>
+    <!-- Jedes Tag (so heißen die Deklarationen) das sich auf einen Container bezieht muss auch wieder geschlossen werden, das passiert mit einem forward slash / -->
+    <body>
+    <!-- Im Body Container befindet sich das eigentliche Dokument, also das was der User sieht. -->
+        <h1>Test</h1><br>
+        <!-- h1 ist ein highlight tag von h1 bis h6 gibt es verschiedene Stufen // bei <br> handelt es sich um einen brake also Zeilenumbruch-->
+        <p id="test-id">this is has an id assigned</p>
+        <!-- <p> ist ein paragraph container, in diesem schreibt man normalen Text, dieser hat eine id zugewiesen bekommen -->
+        <p class="test-class">this has a class assigned</p>
+        <!-- Dieser paragraph hat eine Klasse zugewiesen bekommen -->
+        <p id="test-id-2" class="test-class">this has an id and a class assigned</p><br>
+        <!-- Dieser paragraph hat eine Klasse und eine ID zugewiesen bekommen -->
+        <!-- ID's werden benutzt wenn man einzelnen Elementen etwas zuweisen möchte (z.b. über css) -->
+        <!-- Klassen werden benutzt um mehreren Elementen auf einmal etwas zuzuweisen -->
+        <article><b>Hallo ich bin ein Artikel und Bold</b></article><br>
+        <!-- Die ist ein Artikel tag, im grunde das selbe wie paragraph. Der text ist Fett dank dem <b> Tag -->
+        <a href="test.html">Reload</a><br>
+        <!-- ein simpler Hyperlink, in diesem Fall wird zu selben Seite verlinkt -->
+        <button id="test-button" onclick="clicked();"><p id="test-inner-button">Hallooo ich bin ein Button :D</p></button><br>
+        <!-- Ein einfacher Button Tag mit einer ID und einem onclick Modifier, onclick sorg dafür das bei click etwas ausgeführt wird. -->
+        <!-- darin ist ein paragraph mit einer ID (damit wir den Inhalt ändern können) -->
+        <code>function clicked() {
+            document.getElementById('test-inner-button').innerHTML = 'Oha das tat tut weh!';
+        <!-- Das ist ein Code tag, darin steht der code der auch im Javascript Dokument steht -->
+        }</code><br>
+        <form>
+        <!-- Das form Tag lässt uns Formen erstellen... -->
+            <label for="Vname">Vorname:</label>
+            <!-- Label ist die beschreibung des Inputs für den User -->
+            <input type="text" id="Vname" name="Vname"><br>
+            <!-- Input ist die Input Form also das Feld für die Eingabe -->
+            <label for="Nname">Nachname:</label>
+            <input type="text" id="Nname" name="Nname"><br>
+            <input type="submit" value="Submit">
+        </form><br><br>
+        <img src="img/Rathaus.jpg" alt="Rathaus Spandau" width="340" height="213"> <br><br>
+        <!-- Ein normaler img Tag zur einfügung eines Bildes -->
+        <table>
+        <!-- Ein Table Tag zur Erstellung von Tabellen -->
+            <tr>
+            <!-- <tr> steht für table row, dient also zur erstellung einer neuen reihe in der Tabelle -->
+            <!-- Die anzahl der Zeilen werden durch die <th> einträge bestimmt -->
+              <th>Monat</th>
+              <!-- <th> steht für table header cell, damit lassen sich Überschriften für die einzelnen Zeilen erstellen -->
+              <th>Ausgaben</th>
+            </tr>
+            <tr>
+              <td>Januar</td>
+              <!-- <td> steht für table data cell, damit füllt man normalen Zellen aus -->
+              <td>100 €</td>
+            </tr>
+            <tr>
+              <td>Februar</td>
+              <td>80 €</td>
+            </tr>
+          </table> <br><br>
+        <ol>
+        <!-- <ol> steht für ordered list, das lässt uns eine nummerierte Liste erstellen -->
+            <li>Mund</li>
+            <li>Auge</li>
+            <li>Nase</li>
+        </ol>
+        <ol start="50">
+        <!-- start gibt an ab welcher Nummer gezählt werden soll -->
+            <li>Mund</li>
+            <li>Auge</li>
+            <li>Nase</li>
+        </ol>
+        <ul>
+        <!-- <ul> lässt uns eine unordered list erstellen. -->
+            <li>Mund</li>
+            <li>Auge</li>
+            <li>Nase</li>
+        </ul>
+        <!-- <ul> und <ol> lassen sich auch per css verändern -->
+
+    </body>
+        <script src="js/test.js" async defer></script>
+        <!-- Hierbei handelt es sich um eine Script Verlinkung z.B. zu einem Javascript Dokument -->
+        <!-- Hiervon kann es auch mehrere geben -->
+        <!-- Diese können im Header und nach dem body eingefügt werden je nach Scope-->
+        <!-- In kurz: nach dem Body wenn es auf Elemente in dem Body zugreifen muss  -->
+        <!-- In den Header wenn es als Basis dient für Elemente im Body -->
+        <!-- src gibt den Pfad an, async und defer sind modifier. Diese sorgen dafür das es parallel geladen wird und nicht gewartet wird. -->
+</html>

@@ -1,0 +1,24 @@
+html {
+    font-size: 2rem;
+}
+/* man kann jedes tag in einem HTML Dokument mit CSS verändern, ohne präfix sucht css nach allgemeinen tags wie html oder body*/
+
+body {
+    background-color: grey;
+    color: white;
+}
+
+#test-id {
+    color: blue;
+}
+/* Der # präfix gibt an das es sich um eine ID handelt */
+
+#test-id-2 {
+    color: green;
+}
+
+.test-class {
+    border-style: outset;
+    border-radius: 0.3em;
+}
+/* Der . präfix gibt an das es sich um eine Klasse handelt */
