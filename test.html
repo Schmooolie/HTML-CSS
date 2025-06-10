@@ -37,15 +37,15 @@
         <!-- Klassen werden benutzt um mehreren Elementen auf einmal etwas zuzuweisen -->
         <article><b>Hallo ich bin ein Artikel und Bold</b></article><br>
         <!-- Die ist ein Artikel tag, im grunde das selbe wie paragraph. Der text ist Fett dank dem <b> Tag -->
-        <a href="test.html">Reload</a><br>
+        <a href="test.html">Reload</a><br><br>
         <!-- ein simpler Hyperlink, in diesem Fall wird zu selben Seite verlinkt -->
-        <button id="test-button" onclick="clicked();"><p id="test-inner-button">Hallooo ich bin ein Button :D</p></button><br>
+        <button id="test-button" onclick="clicked();"><p id="test-inner-button">Hallooo ich bin ein Button :D</p></button><br><br>
         <!-- Ein einfacher Button Tag mit einer ID und einem onclick Modifier, onclick sorg dafür das bei click etwas ausgeführt wird. -->
         <!-- darin ist ein paragraph mit einer ID (damit wir den Inhalt ändern können) -->
         <code>function clicked() {
             document.getElementById('test-inner-button').innerHTML = 'Oha das tut weh!';
         <!-- Das ist ein Code tag, darin steht der code der auch im Javascript Dokument steht -->
-        }</code><br>
+        }</code><br><br>
         <form>
         <!-- Das form Tag lässt uns Formen erstellen... -->
             <label for="Vname">Vorname:</label>
@@ -66,15 +66,38 @@
               <th>Monat</th>
               <!-- <th> steht für table header cell, damit lassen sich Überschriften für die einzelnen Zeilen erstellen -->
               <th>Ausgaben</th>
+              <th>Defizit</th>
             </tr>
             <tr>
               <td>Januar</td>
               <!-- <td> steht für table data cell, damit füllt man normalen Zellen aus -->
               <td>100 €</td>
+              <td class="defizit">-100 €</td>
             </tr>
             <tr>
               <td>Februar</td>
               <td>80 €</td>
+              <td class="defizit">-60 €</td>
+            </tr>
+            <tr>
+                <td>März</td>
+                <td>180 €</td>
+                <td class="defizit">-120 €</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>10 €</td>
+                <td class="defizit">-10 €</td>
+            </tr>
+            <tr>
+                <td>Mai</td>
+                <td>580 €</td>
+                <td class="defizit">-620 €</td>
+            </tr>
+            <tr>
+                <td>Juni</td>
+                <td>280 €</td>
+                <td class="defizit">-150 €</td>
             </tr>
           </table> <br><br>
         <ol>

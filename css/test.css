@@ -1,24 +1,99 @@
+/* Man kann jedes tag in einem HTML Dokument mit CSS verändern, ohne präfix sucht css nach allgemeinen tags wie html oder body*/
+
 html {
     font-size: 2rem;
+    /* Ändert Schriftgröße - rem ist eine relative größeneinheit, wird mittlerweile häufiger genutzt als absolute Einheiten wie px (pixel), wichtig für moderne Seiten*/
+    margin: 1rem;
+    /* Ändert die größe des Raums AUSSERHALB des Elements */
+    max-width: 100%;
+    /* Maximale Breite */
+    
 }
-/* man kann jedes tag in einem HTML Dokument mit CSS verändern, ohne präfix sucht css nach allgemeinen tags wie html oder body*/
 
 body {
     background-color: grey;
+    /* Hintergrundfarbe */
+    color: white;
+    /* Textfarbe */
+    border-style: groove;
+    /* Stil des Randes */
+    padding: 0.2rem;
+    /* Änder den Raum INNERHALB des Elements */
+    text-align: center;
+    /* Positioniert den Text */
+}
+
+a:link {
+    color: white;
+    border-color: white;
+    border-style: double;
+    border-width: 0.3rem;
+    padding: 0.1rem;
+}
+/* :link ist ein Pseudo Tag und beschreibt den Status des Elements ebenso wie :visited, :hover und :active */
+
+a:visited {
     color: white;
 }
 
+a:hover {
+    color: red;
+    border-color: red;
+}
+
+a:active {
+    color: red;
+}
+
+table, ol, ul {
+/* Man kann auch mehrere tags auf einmal verarbeiten */
+    table-layout: fixed;
+/* Layout der Tabelle */
+    width: 90%;
+/* Breite */
+    padding-left: 2rem;
+    border-collapse: collapse;
+/* Sorgt für eine einfache Linie für den Rahmen */
+}
+
+ol, ul {
+    text-align: justify;
+    width: fit-content;
+}
+
+table, ol, ul, li, tr, td {
+    border: 1px solid white;
+/* border ist der umfassende befehl für die verschiedenen border befehle wie border-style und border-color */
+}
+
+
+/* ID's */
+/* Der # präfix gibt an das es sich um eine ID handelt */
 #test-id {
     color: blue;
+    text-decoration: underline;
+    /* Damit kann man die Art des Textes ändern */
 }
-/* Der # präfix gibt an das es sich um eine ID handelt */
 
 #test-id-2 {
     color: green;
+    text-transform: uppercase;
+    /* Damit kann man auch die Art des Textes ändern :D*/
+    text-indent: 0.5rem;
+    /* Einrücken des Texts */
+    text-shadow: black 0.05rem 0.05rem;
+    /* Text Schatten */
 }
+
+/* Classes */
 
 .test-class {
     border-style: outset;
     border-radius: 0.3em;
 }
+
+.defizit {
+    color:darkred;
+}
+
 /* Der . präfix gibt an das es sich um eine Klasse handelt */
