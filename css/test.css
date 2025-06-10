@@ -86,6 +86,7 @@ table, ol, ul, li, tr, td {
 }
 
 /* Classes */
+/* Der . präfix gibt an das es sich um eine Klasse handelt */
 
 .test-class {
     border-style: outset;
@@ -96,4 +97,3 @@ table, ol, ul, li, tr, td {
     color:darkred;
 }
 
-/* Der . präfix gibt an das es sich um eine Klasse handelt */
