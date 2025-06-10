@@ -1,4 +1,4 @@
-Eine kleine HTML/CSS Sammlung für Anfänger.
+Eine kleine HTML/CSS Sammlung für Anfänger mit einem Hauch Javascript.
 Gerne rumprobieren :D
 
 
