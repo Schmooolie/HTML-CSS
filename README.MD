@@ -5,7 +5,7 @@ Gerne rum probieren :D
 Vor dem Start:
 
 - Visual Studio Code installieren falls noch nicht vorhanden
-- Diese Dokument in Visual Studio Code öffnen
+- Den Ordner in Visual Studio Code installieren
 - In dem linken Menü auf Extension klicken und Live Preview suchen 
 - Live Preview von Microsoft installieren
 - In dem linken Menü auf Explorer klicken
