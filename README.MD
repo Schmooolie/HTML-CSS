@@ -1,5 +1,5 @@
 Eine kleine HTML/CSS Sammlung für Anfänger mit einem Hauch Javascript.
-Gerne rumprobieren :D
+Gerne rum probieren :D
 
 
 Vor dem Start:
